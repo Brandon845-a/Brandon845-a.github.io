@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230vh;
+    height: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    pointer-events: none;
+    display: none;
+}
+#rect{
+    position: absolute;
+    top: 65px;
+    right: -15px;
+    height: 90vh;
+    width: 0;
+    z-index: 1500;
+    border: solid 2px white;
+    border-radius: 15px;
+    background-color: black;
+    transition: width 0.5s ease-in-out;
+    text-align: center;
+}
+.ella{
+    border-radius: 20%;
+    border: solid 3px white;
+    background-color: #F4C2C2;
+    font-family: 'Dancing Script', cursive;
+    width: 3em;
+    height: 3em;
+    width: 5em;
+    margin: 70px;
+    overflow: hidden;
+}
+.ella:hover{
+    filter: brightness(1.8);
+    transition: filter 0.3s ease-in-out;
+}

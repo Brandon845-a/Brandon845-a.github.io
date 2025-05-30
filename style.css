@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+}
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    
+}
+h1{
+    color: white;
+    font-family: "Luckiest Guy", cursive;
+    
+}
+.main{
+    position: relative;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 15px;
+    top: 7em;
+    padding: 0;
+    margin-left: 180px;
+    margin-right: 180px;    
+    height: 50vh;
+}
+.logo{
+    height: 4em;
+    width: 5em;
+}
+header {
+  background-image: url("negro.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.menu-selector {
+    font-size: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    animation: separar 2s forwards;
+}
+
+@keyframes separar {
+    to {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+
+}
+.main-menu{
+    position: relative;
+    left: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+footer{
+    margin-top: 170px;
+    background-color: black;
+    text-align: center;
+    color: white;
+     
+}
+#personajes{
+    position: relative;
+    display: flex;
+    padding: auto;
+    justify-content: center;
+    gap: 6em;
+}
+.Shelly{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    
+}
+.Bull{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    
+}
+.Colt{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    
+}
+.nombres {
+    position: absolute;
+    top: 2.5em;      /* Ajusta según lo necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    display: flex;
+    gap: 2em;
+    text-align: center;
+    margin: 0;
+    font-family: 'Luckiest Guy', cursive;
+    z-index: 10;
+    animation: nombres-mover 2s forwards;
+}
+@keyframes nombres-mover{
+    to {
+        gap: 11em;
+    } 
+}
+.nombres h2:first-child {
+    transform: translateX(-0.5em); /* Ajusta el valor según lo necesites */
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    z-index: 1000;
+}
+
+.Colt:hover {
+    box-shadow: 0 0 20px 5px #c20404;
+    transform: scale(1.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.Bull:hover {
+    box-shadow: 0 0 20px 5px #070707;
+    transform: scale(1.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.Shelly:hover{
+    box-shadow: 0 0 20px 5px #be06c8;
+    transform: scale(1.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+#botoncito {
+    position: absolute;
+    background: none;
+    border: none;
+    color: transparent;
+    position: absolute; /* Si quieres que cubra la imagen */
+    width: 150px; /* Ajusta según el tamaño de la imagen */
+    height: 150px; /* Ajusta según el tamaño de la imagen */
+    cursor: pointer;
+    z-index: 2;
+    right: 0;
+}
+

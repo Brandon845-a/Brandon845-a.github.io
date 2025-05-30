@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#video-circulo{
+    position: fixed;
+    background-color: red;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em; 
+    z-index: 1700;
+    margin-left: 170px;
+    overflow: hidden;
+}
+@keyframes trasladar{
+    0%{
+        transform: translate(0,0);
+        width: 5em;
+        height: 5em;
+        background-color: red;
+    }
+    50%{
+        transform: translate(-30em,0);
+        width: 5em;
+        height: 5em;
+        background-color: #F4C2C2;
+    }
+    70%{
+        transform: translate(-30em, -100px);
+        width: 5em;
+        height: 5em;
+        background-color:  red;
+        
+    }
+    100%{
+        transform: translate(-30em,-150px) scale(30);
+        background-color: black;
+        }
+}
+#main-video{
+    display: none; 
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: 4000;
+    right: 65%;
+    top: 30%;
+}
+/* CAMBIADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+@keyframes video{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#you{
+    
+    position: absolute;
+    top: 90px;
+    right: 43%;
+    display: none;
+    gap: 3.5em;
+    z-index: 4000;
+}
+.Tu{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    z-index: 4000;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#you .tu h1{
+    z-index: 4000;
+    color: red;
+}
+@keyframes degradado{
+     
+        0%{
+            opacity: 0;
+            transform: translateY(-100px);
+            color: red;
+        }
+        50%{
+            opacity: 1;
+            transform: translateY(0);
+            color: #F4C2C2;
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+            color: red;
+        }
+    
+}
